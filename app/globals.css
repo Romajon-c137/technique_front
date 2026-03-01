@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Primary (Highlight) Colors */
+  --color-primary-100: #EAF2FF;
+  --color-primary-200: #B4DBFF;
+  --color-primary-300: #6FBAFF;
+  --color-primary-400: #2897FF;
+  --color-primary-500: #006FFD;
+
+  /* Success Colors */
+  --color-success-100: #E7F4E8;
+  --color-success-500: #3AC0A0;
+  --color-success-900: #208287;
+
+  /* Warning Colors */
+  --color-warning-100: #FFF4E4;
+  --color-warning-500: #FFB37C;
+  --color-warning-900: #E86339;
+
+  /* Error Colors */
+  --color-error-100: #FFE2E5;
+  --color-error-500: #FF616D;
+  --color-error-900: #ED3241;
+
+  /* Dark (Neutral Dark) Colors */
+  --color-dark-100: #8F9098;
+  --color-dark-300: #71727A;
+  --color-dark-500: #1F2024;
+  --color-dark-700: #2F3036;
+  --color-dark-900: #1F2024;
+
+  /* Gray (Neutral Light) Colors */
+  --color-gray-100: #FFFFFF;
+  --color-gray-200: #F8F9FE;
+  --color-gray-300: #E8E9F1;
+  --color-gray-400: #D4D6DD;
+  --color-gray-500: #C5C6CC;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  h1 {
+    @apply font-extrabold text-[24px] leading-tight;
+  }
+  h2 {
+    @apply font-extrabold text-[18px] leading-snug;
+  }
+  h3 {
+    @apply font-extrabold text-[16px] leading-snug;
+  }
+  h4 {
+    @apply font-bold text-[14px] leading-snug;
+  }
+  h5 {
+    @apply font-bold text-[12px] leading-snug;
+  }
+
+  /* Body */
+  .body-xl {
+    @apply font-normal text-[18px] leading-snug;
+  }
+  .body-l {
+    @apply font-normal text-[16px] leading-snug;
+  }
+  .body-m {
+    @apply font-normal text-[14px] leading-snug;
+  }
+  .body-s {
+    @apply font-normal text-[12px] leading-snug;
+  }
+  .body-xs {
+    @apply font-medium text-[10px] leading-snug;
+  }
+
+  /* Action */
+  .action-l {
+    @apply font-semibold text-[14px] leading-snug;
+  }
+  .action-m {
+    @apply font-semibold text-[12px] leading-snug;
+  }
+  .action-s {
+    @apply font-semibold text-[10px] leading-snug;
+  }
+
+  /* Caption */
+  .caption-m {
+    @apply font-semibold text-[10px] leading-snug;
+  }
+}
