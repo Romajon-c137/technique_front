@@ -1,4 +1,5 @@
 import type { TechniqueListResponse, TechniqueItem } from '@/types/technique';
+export type { TechniqueItem } from '@/types/technique';
 
 const API_BASE_URL = '/api';
 

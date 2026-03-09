@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../app/%28tabs%29/home/baners/%5Bid%5D/page.tsx"],"sourcesContent":["export default function Page() {\n    return (\n        <div>\n            <h1>Детали баннера</h1>\n        </div>\n    );\n}\n"],"names":[],"mappings":"gXAAe,SAAS,IACpB,MACI,CAAA,EAAA,EAAA,GAAA,EAAC,MAAA,UACG,CAAA,EAAA,EAAA,GAAA,EAAC,KAAA,UAAG,oBAGhB"}

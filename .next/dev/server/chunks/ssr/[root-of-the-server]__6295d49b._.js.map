@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///Users/user/Desktop/Dev/Akfa-technique/technique_front/app/%28tabs%29/search/page.tsx"],"sourcesContent":["export default function Page() {\n    return (\n        <div>\n            <h1>Поиск</h1>\n        </div>\n    );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;kBACG,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGhB"}}]
+}

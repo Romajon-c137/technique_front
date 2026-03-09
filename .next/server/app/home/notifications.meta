@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(tabs)/layout,_N_T_/(tabs)/home/layout,_N_T_/(tabs)/home/notifications/layout,_N_T_/(tabs)/home/notifications/page,_N_T_/home/notifications"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHRhYnMp/home/notifications/__PAGE__",
+    "/!KHRhYnMp/home/notifications",
+    "/!KHRhYnMp/home",
+    "/!KHRhYnMp",
+    "/_index",
+    "/_head"
+  ]
+}

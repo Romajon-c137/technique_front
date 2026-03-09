@@ -1,0 +1,274 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [
+      {
+        "source": "/api/:path*/",
+        "destination": "http://back.akfaglass.kg/api/:path*/",
+        "regex": "^/api(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?/(?:/)?$"
+      },
+      {
+        "source": "/api/:path*",
+        "destination": "http://back.akfaglass.kg/api/:path*",
+        "regex": "^/api(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+      },
+      {
+        "source": "/media/:path*",
+        "destination": "http://back.akfaglass.kg/media/:path*",
+        "regex": "^/media(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+      }
+    ],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/home/baners/[id]",
+      "regex": "^/home/baners/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/home/baners/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/home/banners/[id]",
+      "regex": "^/home/banners/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/home/banners/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/home/notifications/[id]",
+      "regex": "^/home/notifications/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/home/notifications/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/responsible/[id]",
+      "regex": "^/responsible/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/responsible/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/techniques/[id]",
+      "regex": "^/techniques/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/techniques/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/techniques/[id]/errors",
+      "regex": "^/techniques/([^/]+?)/errors(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/techniques/(?<nxtPid>[^/]+?)/errors(?:/)?$"
+    },
+    {
+      "page": "/techniques/[id]/maintenance",
+      "regex": "^/techniques/([^/]+?)/maintenance(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/techniques/(?<nxtPid>[^/]+?)/maintenance(?:/)?$"
+    },
+    {
+      "page": "/techniques/[id]/maintenance/history",
+      "regex": "^/techniques/([^/]+?)/maintenance/history(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/techniques/(?<nxtPid>[^/]+?)/maintenance/history(?:/)?$"
+    },
+    {
+      "page": "/techniques/[id]/maintenance/[maintenanceId]",
+      "regex": "^/techniques/([^/]+?)/maintenance/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid",
+        "nxtPmaintenanceId": "nxtPmaintenanceId"
+      },
+      "namedRegex": "^/techniques/(?<nxtPid>[^/]+?)/maintenance/(?<nxtPmaintenanceId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/techniques/[id]/manuals",
+      "regex": "^/techniques/([^/]+?)/manuals(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/techniques/(?<nxtPid>[^/]+?)/manuals(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/home",
+      "regex": "^/home(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home(?:/)?$"
+    },
+    {
+      "page": "/home/baners",
+      "regex": "^/home/baners(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/baners(?:/)?$"
+    },
+    {
+      "page": "/home/in-progress",
+      "regex": "^/home/in\\-progress(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/in\\-progress(?:/)?$"
+    },
+    {
+      "page": "/home/notifications",
+      "regex": "^/home/notifications(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/notifications(?:/)?$"
+    },
+    {
+      "page": "/home/overdue",
+      "regex": "^/home/overdue(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/overdue(?:/)?$"
+    },
+    {
+      "page": "/home/team",
+      "regex": "^/home/team(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/team(?:/)?$"
+    },
+    {
+      "page": "/home/today",
+      "regex": "^/home/today(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/today(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/profile",
+      "regex": "^/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile(?:/)?$"
+    },
+    {
+      "page": "/profile/about",
+      "regex": "^/profile/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile/about(?:/)?$"
+    },
+    {
+      "page": "/profile/history",
+      "regex": "^/profile/history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile/history(?:/)?$"
+    },
+    {
+      "page": "/profile/personal-data",
+      "regex": "^/profile/personal\\-data(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile/personal\\-data(?:/)?$"
+    },
+    {
+      "page": "/profile/profile-edit",
+      "regex": "^/profile/profile\\-edit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile/profile\\-edit(?:/)?$"
+    },
+    {
+      "page": "/profile/profile-edit/change-password",
+      "regex": "^/profile/profile\\-edit/change\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile/profile\\-edit/change\\-password(?:/)?$"
+    },
+    {
+      "page": "/profile/support",
+      "regex": "^/profile/support(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile/support(?:/)?$"
+    },
+    {
+      "page": "/qr",
+      "regex": "^/qr(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/qr(?:/)?$"
+    },
+    {
+      "page": "/search",
+      "regex": "^/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/search(?:/)?$"
+    },
+    {
+      "page": "/techniques",
+      "regex": "^/techniques(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/techniques(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
